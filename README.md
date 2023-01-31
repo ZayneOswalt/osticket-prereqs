@@ -24,7 +24,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Install and configure HeidiSQL
 - Install osTicket
 
-<h2>Installation Steps</h2>
+<h2>Microsoft Azure Steps</h2>
 
 <p>
 <img src="https://i.imgur.com/E6VDlGR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -68,6 +68,8 @@ Go back to your virtual machines and copy the IP address.
 Search "remote desktop connection" in your search bar and open it. Select "Show options", paste the IP you copied from your virtual machine and type the username you set for it, click "Connect". A window will pop up asking for the password, hit enter and another window will pop up, just click "Yes."
 </p>
 <br />
+
+<h2>Inside your Virtual Machine</h2>
 
 <p>
 <img src="https://i.imgur.com/CdSXWYO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
