@@ -52,3 +52,142 @@ Click the blue dropdown box and select "Azure Virtual Machine."
 Name your virtual machine "vm-osTicket", select Windows 10 Pro for the image, select a size with 4 vCPUs, and create a username and password to use to connect to your VM.
 </p>
 <br />
+
+<p>
+<img src="https://i.imgur.com/1a8VSCv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Go back to your virtual machines and copy the IP address.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/VHeLTzI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Search "remote desktop connection" in your search bar and open it. Select "Show options", paste the IP you copied from your virtual machine and type the username you set for it, click "Connect". A window will pop up asking for the password, hit enter and another window will pop up, just click "Yes."
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/CdSXWYO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Once inside your virtual machine, search for your control panel and open it. Click "Programs", then click "Turn Windows features on or off" with the shield in front of it. Navigate down to "Internet Information Services", click the box in front of it then expand it, expand "World Wide Web Services", expand "Application Development Features" and check the box beside CGI.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/B0YdFah.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/gtFFk0t.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Search Google for PHP Manager and the URL Rewrite Module and install them.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/XkmKYWl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Create a folder in C: drive named "PHP", google and download PHP 8.2, open the zip file and extract everything into the folder you created.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/sNQINYw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Google VC 2015-2022 redistributable (x86) and MySQL, download and install them. Navigate through the MySQL, and create a password for "root".
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/RdXiHek.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Open IIS as administrator, click "PHP Manager", click "Register new PHP version", click the 3 little dots and look for php-cgi.exe in the PHP folder you created.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/5xDwLvn.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Click "Enable or disable an extension", look for these 3 extensions and enable them, they will be needed to recieve mail and improve performance for osTicket.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/kZz29fU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Search Google for osTicket, download and open the zip file. Extract the upload folder into c:/inetpub/wwwroot and rename it to osTicket.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/PbfSpGB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Go back to IIS, expand "sites", expand "default web site", click "osTicket", then click "Browse *:80 (http)" to see if it opens.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/PBgmwUy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Go back to your osTicket folder, open "Include", scroll and find "ost-conig.php" and right click it, click "Properties", click "security", click "advanced", click "Disable Inheritance", then click "Remove all Inherited permission from this object."
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/ssBElhS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Create a new permission for "Everyone" with full control.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/U338fq4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Search Google for HeidiSQL, download, install, and launch it.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/8xy0nec.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Open HeidiSQL, enter the password under "root" you created when you installed MySQL, then click "Open".
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/PRyPn3i.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Right-click "Unnamed" or what you named it, go down to "Create new", and click "Database". Name it "osTicket" and click "OK".
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/a38UUKD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Go back to osTicket, fill out everything and once you get to the last 3, enter the database information you created in HeidiSQL, and click "Install Now".
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/yExtBTN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+If everything was followed correctly, osTicket will be successfully installed.
+</p>
+<br />
