@@ -68,7 +68,7 @@ Search "remote desktop connection" in your search bar and open it. Select "Show 
 </p>
 <br />
 
-<h2>Inside your Virtual Machine</h2>
+<h2>Inside Your Virtual Machine</h2>
 
 <p>
 Once inside your virtual machine, search for your control panel and open it. Click "Programs", then click "Turn Windows features on or off" with the shield in front of it. Navigate down to "Internet Information Services", click the box in front of it then expand it, expand "World Wide Web Services", expand "Application Development Features" and check the box beside CGI.
@@ -98,7 +98,7 @@ Create a folder in C: drive named "PHP", google and download PHP 8.2, open the z
 </p>
 <br />
 
-<h2>VC redist and MySQL</h2>
+<h2>VC Redist and MySQL</h2>
 
 <p>
 Google VC 2015-2022 redistributable (x86) and MySQL, download and install them. Navigate through the MySQL, and create a password for "root".
@@ -129,7 +129,7 @@ Click "Enable or disable an extension", look for these 3 extensions and enable t
 </p>
 <br />
 
-<h2>Downloading and configuring osTicket</h2>
+<h2>Downloading and Configuring osTicket</h2>
 
 <p>
 Search Google for osTicket, download and open the zip file. Extract the upload folder into c:/inetpub/wwwroot and rename it to osTicket.
