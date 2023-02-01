@@ -206,3 +206,21 @@ If everything was followed correctly, osTicket will be successfully installed.
 <img src="https://i.imgur.com/yExtBTN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
+
+<h2>Cleaning Up</h2>
+
+<p>
+Now you need to clean it up by deleting the Setup and changing permissions back to "Read".
+</p>
+<p>
+<img src="https://i.imgur.com/2JgQoq9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/0tv0RkN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<h2>Conclusion</h2>
+
+<p>
+OsTicket is now all setup and ready for you to configure it for your needs.
+</p>
